@@ -19,6 +19,14 @@
  		<!--  set up constructor injection -->
  		<constructor-arg ref="myFortune" /> 		
  	</bean>
+ 	
+ 	<bean id = "myCricketCoach"
+ 		class="Spring.Demo1.CricketCoach">
+ 		<!--  set up setter injection -->
+ 		<property name="fortuneService" ref="myFortune" />
+ 		<property name="emailAddress" value="anemail@domain.com" />
+ 		<property name="team" value="Winners" />
+ 	</bean>
 
 </beans>
 
